@@ -1,0 +1,274 @@
+body{
+  background: #f1efef  !important;
+}
+.logo-size{
+  width: 12%;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+      justify-content: end;
+  }
+}
+
+.bg-color {
+  --bs-bg-opacity: 1;
+  background-color: #024749 !important;
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 999 !important;
+  transition: ease all;
+}
+.text-color{
+  color: white !important;
+}
+
+.font-size{
+  font-size: 12px !important;
+}
+.font-wight{
+  font-weight:700;
+  
+}
+
+.cls-1 {
+  fill: #4682c4;
+}
+
+.cls-1, .cls-2 {
+  opacity: .79;
+  stroke-width: 0px;
+}
+
+.cls-2 {
+  fill: #75c04a;
+}
+
+.bg-banner{
+  background-color: #024749 !important;
+}
+
+.bg-white{
+  background-color: white;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px 0px 53px 53px;
+  position: fixed;
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+  margin-top: 60px;
+  z-index: 99999;
+}
+.line{
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  position: relative;
+}
+.dot-orange{
+  background-color: #F2521B;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+}
+.dot1-postion{
+  position: absolute;
+  right: -6px;
+  top: -7px;
+}
+.dot2-postion{
+  position: absolute;
+  top: -7px;
+}
+.color-founder{
+color: #F2521B;
+}
+
+.line-2{
+ 
+    width: 356px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+}
+.card-color{
+  background-color: #2B7C79;
+}
+.line-Meet{
+  width: 305px;
+  height: 3px;
+  background-color: black;
+  position: relative;
+}
+
+.color-meet-text{
+  color: #024749 !important;
+}
+.Meet-title{
+  font-weight: 700;
+  font-size: 31px;
+}
+
+
+
+.custom-toggler {
+  border: none; /* Removes the default border */
+  background-color: white; /* Sets the background color to white */
+  border: none !important;
+  outline: none !important;
+}
+
+.custom-toggler:focus,
+.custom-toggler:active,
+.custom-toggler:hover {
+  border: none !important;
+  outline: none !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%2815, 15, 15, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: invert(1); /* Makes the lines white */
+}
+.line-meet-member{
+   
+  width: 312px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+}
+.line-frame{
+  width: 359px;
+  height: 3px;
+  background-color: black;
+  position: relative;
+}
+@media screen and (max-width:768px) {
+  .dropdown-responsive{
+    margin-top: 68px;
+  }
+}
+@media screen and (max-width:430px) {
+  .header-responsive{
+    width: 240px;
+  } 
+.font-size{
+  font-size: 16px !important;
+}
+.font-wight{
+  font-weight:600;
+  
+}
+.img-resonsive{
+  width: 100% !important;
+}
+.team-frame-width{
+  width: 100% !important;
+}
+}
+
+
+@property --angle {
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
+
+@keyframes revolve {
+  from { --angle: 0deg; }
+  to { --angle: 360deg; }
+}
+
+
+.planet, .moon {
+  grid-area: 1 / 1;
+  padding: 10px;
+  border: 4px dashed #f4ead5;
+  border-radius: 50%;
+  background-color: #215a6d;
+}
+
+.moon {
+  --amplitude: 150px;
+  --x: calc(cos(var(--angle)) * var(--amplitude));
+  --y: calc(sin(var(--angle)) * var(--amplitude));
+  translate: var(--x) var(--y);
+  animation: revolve 12s linear infinite;
+}
+
+
+.planet img {
+  width: 150px;
+}
+
+.moon img {
+  width: 50px;
+}
+
+
+.container-moon{
+  font-size: 10px;
+  width: 40em;
+  height: 40em;
+  position: absolute;
+  right: 105px;
+  margin-top: 146px;
+}
+.sun{
+  position: absolute;
+  top: 15em;
+  left: 15em;
+  width: 10em;
+  height: 10em;
+  background-color: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 3em white;
+}
+.earth, .moon{
+  position: absolute;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+  border-width: 0.1em 0.1em 0 0;
+  border-radius: 50%;
+}
+.earth{
+  top: 5em;
+  left: 5em;
+  width: 30em;
+  height: 30em;
+  animation: orbit 9.5s linear infinite;
+}
+.moon{
+  top: 0;
+  right: 0;
+  width: 8em;
+  height: 8em;
+  animation: orbit 2.7s linear infinite;
+}
+.earth::before, .moon::before{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.earth::before{
+  top: 2.8em;
+  right: 2.8em;
+  width: 3em;
+  height: 3em;
+  background-color: aqua;
+}
+.moon::before{
+  top: 0.8em;
+  right: 0.2em;
+  width: 1.2em;
+  height: 1.2em;
+  background-color: silver;
+}
+@keyframes orbit {
+  to{
+      transform: rotate(360deg);
+  }
+}

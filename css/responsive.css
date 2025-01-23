@@ -1,0 +1,43 @@
+@media screen and (min-width: 768px) {
+    .responsive-border {
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px){
+    .font-22{
+        font-size: 16px;
+    }
+    .width-responsive{
+        width: 300px;
+    }
+    .bg-white-style{
+        position: fixed;
+        top: 53px;
+    }
+    .img-resonsive{
+        width: 280px !important;
+    }
+    .navbar-nav{
+        margin-top: 67px;
+    }
+   
+        .team-frame-width {
+            width: 100% !important;
+        }
+
+}
+@media screen and (max-width:395px) {
+    .font-22{
+        font-size: 12px;
+    }
+    .width-responsive{
+        width: 223px;
+    }
+    .font-12 {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:320px) {
+    
+}
